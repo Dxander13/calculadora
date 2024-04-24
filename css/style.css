@@ -1,0 +1,72 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+}
+
+body {
+    background-color: #224878;   
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+#calculadora {
+    background-color: chocolate;
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 30px 30px 10px 30px;
+    border-radius: 15px;
+    box-shadow: 15px 15px 0px #424242;
+
+}
+
+#calculadora > .calculadora_pantalla{
+    width: 100%;
+    padding: 20px;
+    text-align: right;
+    background-color: #bcd1c0;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    font-size: 70px;
+}
+
+#calculadora > .calculadora_pantalla >.pant1 {
+    font-size: 40px;
+}
+
+#calculadora > .calculadora_btn-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;    
+}
+
+#calculadora >.calculadora_btn-grid > button{
+    padding: 10px;
+    background-color: darkgray;
+    font-weight: bold;
+    border-radius: 20px;
+    border-width: 3px;
+    border-color: #C9c9c9;
+    font-size: 25px;
+
+}
+
+#calculadora >.calculadora_btn-grid > button:nth-child(17){
+    grid-column: span 2;
+}
+
+#calculadora >.calculadora_btn-grid > button:nth-child(19){
+    background-color:dimgray;
+    border-color:#224878;
+}
+#calculadora >.calculadora_btn-grid > button:hover{
+    background-color:slategrey;
+}
+
+#calculadora > .copy {
+    color: #bcd1c0;
+    text-align: center;
+    margin-top: 20px;
+    font-style: oblique;
+    font-weight: bold;
+}
